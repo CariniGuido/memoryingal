@@ -57,22 +57,23 @@ body {
   h1 {
     animation: bounce 10s;
   }
-    @media (max-width: 768px) {
-      #game-board {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: stretch;
-        height: 100vh; /* Ajusta la altura del tablero al 100% del viewport height */
-      }
-    
-      .card {
-        width: calc(20% - 20px); /* Ajusta el ancho de las tarjetas para dispositivos móviles */
-        height: calc(20vh - 20px); /* Ajusta la altura de las tarjetas en función del viewport height */
-        font-size: 16px; /* Ajusta el tamaño de fuente para dispositivos móviles */
-      }
-    
-      .card img {
-        max-height: calc(16vh - 20px); /* Ajusta la altura máxima de las imágenes en función del viewport height */
-      }
+  @media (max-width: 768px) {
+    #game-board {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      height: 100vh; /* Ajusta la altura del tablero al 100% del viewport height */
     }
+  
+    .card {
+      width: calc(50% - 20px); /* Ajusta el ancho de las tarjetas para dispositivos móviles en posición vertical */
+      height: calc(25vh - 20px); /* Ajusta la altura de las tarjetas en función del viewport height */
+      font-size: 12px; /* Ajusta el tamaño de fuente para dispositivos móviles en posición vertical */
+    }
+  
+    .card img {
+      max-height: calc(20vh - 20px); /* Ajusta la altura máxima de las imágenes en función del viewport height */
+    }
+  }
+  
