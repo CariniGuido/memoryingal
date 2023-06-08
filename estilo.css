@@ -82,10 +82,9 @@
       top: auto; /* Reinicia la posición superior */
       right: auto; /* Reinicia la posición derecha */
     }
+  
+    .container {
+      height: 100vh; /* Establece la altura del contenedor al 100% del alto de la ventana */
+    }
   }
- 
-  
-  
-  
-  
   
