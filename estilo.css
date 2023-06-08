@@ -80,4 +80,12 @@ body {
       max-height: calc(20vh - 20px); /* Ajusta la altura máxima de las imágenes en función del viewport height */
     }
   }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
   
+  .container {
+    min-height: 100vh;
+  }
