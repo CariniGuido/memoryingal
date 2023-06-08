@@ -1,0 +1,67 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  #score {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: "Courier New", Courier, monospace;
+    animation: typing 2s steps(40) infinite;
+  }
+  
+  .card {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  
+  #retry-button {
+    margin-top: 10px;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  h1 {
+    animation: bounce 10s;
+  }
+  
+  .container {
+    margin-top: 20px;
+  }
+  
+  #game-board {
+    margin-top: 20px;
+  }
+  
