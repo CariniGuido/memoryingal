@@ -1,4 +1,4 @@
- body {
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -59,25 +59,12 @@
   
   @media (max-width: 768px) {
     .card {
-      width: 250px; /* Ajusta el ancho de las tarjetas para dispositivos móviles */
-      height: 380px; /* Ajusta la altura de las tarjetas para dispositivos móviles */
-      font-size: 120px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+      width: 100%; /* Ajusta el ancho de las tarjetas para dispositivos móviles */
+      height: 100%; /* Ajusta la altura de las tarjetas para dispositivos móviles */
+      font-size: 74%; /* Ajusta el tamaño de fuente para dispositivos móviles */
     }
   
     .card img {
-      max-height: 300px; /* Ajusta la altura máxima de las imágenes para dispositivos móviles */
+      max-height: 100%; /* Ajusta la altura máxima de las imágenes para dispositivos móviles */
     }
-  }
-  .card {
-    flex: 1;
-    background-color: blue;
-    border-radius: 5px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
   }
