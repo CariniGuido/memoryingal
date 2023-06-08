@@ -12,6 +12,7 @@ body {
     justify-content: center;
     height: 100%;
     text-align: center;
+    overflow: hidden;
   }
   
   #score {
@@ -64,8 +65,11 @@ body {
       justify-content: center;
       align-items: stretch;
       height: 100vh; /* Ajusta la altura del tablero al 100% del viewport height */
+      
     }
-  
+  .container {
+    overflow: hidden;
+  }
     .card {
       width: calc(50% - 20px); /* Ajusta el ancho de las tarjetas para dispositivos móviles en posición vertical */
       height: calc(25vh - 20px); /* Ajusta la altura de las tarjetas en función del viewport height */
