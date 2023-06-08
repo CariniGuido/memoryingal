@@ -65,3 +65,27 @@
     margin-top: 20px;
   }
   
+  @media (max-width: 768px) {
+    /* Estilos para dispositivos móviles */
+    .card {
+      width: 80px; /* Ajusta el ancho de las tarjetas para dispositivos móviles */
+      height: 80px; /* Ajusta la altura de las tarjetas para dispositivos móviles */
+      font-size: 18px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    }
+  
+    .card img {
+      max-height: 80px; /* Ajusta la altura máxima de las imágenes para dispositivos móviles */
+    }
+  
+    #score {
+      position: relative; /* Cambia la posición a relativa */
+      top: auto; /* Reinicia la posición superior */
+      right: auto; /* Reinicia la posición derecha */
+    }
+  }
+ 
+  
+  
+  
+  
+  
