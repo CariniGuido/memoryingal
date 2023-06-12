@@ -1,115 +1,78 @@
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+#game-board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+}
+
+.card {
+  flex: 1;
+  background-color: blue;
+  border-radius: 5px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100px;
+}
+
+#retry-button {
+  margin-top: 10px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
   }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+h1 {
+  animation: bounce 10s;
+}
+
+@media (max-width: 768px) {
   #game-board {
-    flex-grow: 1;
-    align-self: stretch;
-    
-        width: 100%;
-        height: 100%;
-      
-  }
-  
-  .container {
-    min-height: 100vh;
-  }
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    text-align: center;
-    overflow: hidden;
-  }
-  
-  #score {
-    font-family: "Courier New", Courier, monospace;
-    animation: typing 2s steps(40) infinite;
-  }
-  
-  .card {
-    flex: 1;
-    background-color: blue;
-    border-radius: 5px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .card img {
-    max-width: 100%;
-    max-height: 100px;
-  }
-  
-  #retry-button {
-    margin-top: 10px;
-  }
-  
-  @keyframes bounce {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
+    height: 100vh;
   }
 
-  h1 {
-    animation: bounce 10s;
+  .card {
+    width: calc(50% - 20px);
+    height: calc(25vh - 20px);
+    font-size: 12px;
   }
-  @media (max-width: 768px) {
-    #game-board {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: stretch;
-      height: 100vh; /* Ajusta la altura del tablero al 100% del viewport height */
-      
-    }
-  .container {
-    overflow: hidden;
+
+  .card img {
+    max-height: calc(20vh - 20px);
   }
-    .card {
-      width: calc(50% - 20px); /* Ajusta el ancho de las tarjetas para dispositivos móviles en posición vertical */
-      height: calc(25vh - 20px); /* Ajusta la altura de las tarjetas en función del viewport height */
-      font-size: 12px; /* Ajusta el tamaño de fuente para dispositivos móviles en posición vertical */
-    }
-  
-    .card img {
-      max-height: calc(20vh - 20px); /* Ajusta la altura máxima de las imágenes en función del viewport height */
-    }
-  }
-  html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    min-height: 100vh;
-  }
-  #game-board {
-    flex-grow: 1;
-    align-self: stretch;
-    
-        width: 100%;
-        height: 100%;
-      
-  }
+}
