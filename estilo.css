@@ -19,7 +19,7 @@ html, body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
-  width: 100%;
+ 
 }
 
 .card {
@@ -62,11 +62,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  #game-board {
-    width: 100%;
-    height: 1500px;
-    
-  }
+  
 
   .card {
     width: calc(50% - 20px);
@@ -77,4 +73,9 @@ h1 {
   .card img {
     max-height: calc(20vh - 20px);
   }
+  #game-board {
+    height: -webkit-fill-available;
+}
+  
+
 }
